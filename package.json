@@ -1,0 +1,14 @@
+{
+  "name": "mode_study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mingrui123 <529539548@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cmr-pack": "^1.1.1"
+  },
+  "scripts": {
+    "start": "node cmr-pack.js",
+    "test": "node --inspect-brk main.js"
+  }
+}
