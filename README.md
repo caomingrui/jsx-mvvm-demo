@@ -32,3 +32,10 @@ const Context = (props) => {
     }
 }
 ```
+
+<p style="color: aquamarine">模板语法支持三元运算/ 及基本运算符</p>
+<ul style="color: rosybrown">
+    <li>[[name.length > 3? 1: 2]]</li>
+    <li>[[name * 3]]</li>
+    <li>等...</li>
+</ul>
