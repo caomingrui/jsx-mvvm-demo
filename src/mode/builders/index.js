@@ -4,7 +4,8 @@ import 'src/mode/builders/index.less';
 const Context = (props) => {
     const {setData: change} = props;
     const [data, setData] = useState({
-        name: 123
+        name: 123,
+        a: <span>我是span</span>
     }, Context);
 
     change((data) => {
@@ -17,7 +18,7 @@ const Context = (props) => {
         render() {
             return (
                 <div onClick={() => setData({name: 111})}>
-                    我是context-[[name]] - {props.name} [[name.length > 3? 1: 2]] [[name * 3]]
+                    我是context-[[name]] - {props.name} [[(d) => !(d.name > d.a)? d.a: 2]] [[name * 3]]
                 </div>
             );
         }

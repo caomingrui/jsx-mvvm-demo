@@ -37,5 +37,5 @@ const Context = (props) => {
 <ul style="color: rosybrown">
     <li>[[name.length > 3? 1: 2]]</li>
     <li>[[name * 3]]</li>
-    <li>等...</li>
+    <li>[[(data) => data.name > data.a? data.a: 2]]</li>
 </ul>
