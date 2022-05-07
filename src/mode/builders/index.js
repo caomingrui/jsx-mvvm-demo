@@ -5,7 +5,8 @@ const Context = (props) => {
     const {setData: change} = props;
     const [data, setData] = useState({
         name: 123,
-        a: <span>我是span</span>
+        a: <span style={{color: 'red'}}>我是span</span>,
+        b: <span style={{color: '#488375'}}>span 2</span>
     }, Context);
 
     change((data) => {
@@ -17,8 +18,11 @@ const Context = (props) => {
         data,
         render() {
             return (
-                <div onClick={() => setData({name: 111})}>
-                    我是context-[[name]] - {props.name} [[(d) => !(d.name > d.a)? d.a: 2]] [[name * 3]]
+                <div onClick={() => setData({name: 1})}>
+                    我是context-[[name]] - - a[[(d) => (d.name > 2)? d.a: d.b]] --a [[name * 3]]
+                    <div>
+                        [[() => <span>123123</span>]]
+                    </div>
                 </div>
             );
         }
