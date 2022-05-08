@@ -5,7 +5,6 @@ function But () {
     const [data, setData] = useState({
         count: 0
     }, But);
-
     return {
         data,
         render() {
@@ -40,7 +39,7 @@ const Context = (props) => {
         data,
         render() {
             return (
-                <div onClick={() => setData({name: 1})}>
+                <div onClick={() => setData({name: 1, list: [<div>嘚嘚嘚</div>, 1,2,3]})}>
                     我是context-[[name]] - 点我修改name - a[[(d) => (d.name > 2)? d.a: d.b]] --a [[name * 3]]
                     <div>
                         a[[name]]b{`[[(o) => render('div', null, render('span', {style: {color: 'red'}}, o.name))]]`}
