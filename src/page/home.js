@@ -20,8 +20,8 @@ function Home (props) {
                         });
                     }}>我是home✌</p>
                     <div>[[(d) => d.count]]</div>
-                    <div onClick={() => push({path: '#/a'})}>跳转home/a</div>
-                    <div onClick={() => push({path: '#/'})}>跳转home</div>
+                    <div onClick={() => push({path: '#/App/a'})}>跳转home/a</div>
+                    <div onClick={() => push({path: '#/App'})}>跳转home</div>
                     {props.children}
                 </div>
             )

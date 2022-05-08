@@ -6,18 +6,18 @@ import home, { A } from 'src/page/home.js';
  */
 const router = [
     {
-        path: '#/',
+        path: '#/App',
         component: home,
         name: 'Home',
         children: [
             {
-                path: '#/a',
+                path: '#/App/a',
                 component: A
             }
         ]
     },
     {
-        path: '#abc',
+        path: '#/jjj',
         component: A
     }
 ];
